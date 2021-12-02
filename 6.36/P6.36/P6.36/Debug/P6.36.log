@@ -1,0 +1,4 @@
+﻿  main.c
+d:\pic\業\程式語言\作業\ch5\110360210_潘宥叡\6.36\source\main.c(9): warning C4101: 'z': 未參考的區域變數
+d:\pic\業\程式語言\作業\ch5\110360210_潘宥叡\6.36\source\main.c(27): warning C4716: 'ss': 必須傳回值
+  P6.36.vcxproj -> D:\pic\業\程式語言\作業\CH5\110360210_潘宥叡\6.36\P6.36\Debug\P6.36.exe
