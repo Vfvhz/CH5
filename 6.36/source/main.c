@@ -1,14 +1,25 @@
-#include<stdio.h>
-#include<stdlib.h>
-
-int main(void)
+#include "stdio.h"
+#include "string.h"
+char *reverse(char *str);
+int main()
 {
-	int i;
-	int a[10];
-	for (i = 0; i < 10; i++)
+	char str[100];
+	gets(str);
+	reverse(str);
+	puts(str);
+	return 0;
+}
+char *reverse(char *str)
+{
+	int len = strlen(str);
+	if (len > 1)
 	{
-		printf("請輸入第%d個數字(共10個)：", i + 1);
-		scanf_s("%d", a[i]);
+		char ctemp = str[0];
+		str[0] = str[len - 1];
+		str[len - 1] = '\0';        
+		reverse(str + 1);         
+		str[len - 1] = ctemp;
 	}
 
+	return str;
 }
